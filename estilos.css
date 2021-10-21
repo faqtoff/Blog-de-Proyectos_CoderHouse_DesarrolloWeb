@@ -1,0 +1,19 @@
+h1 {
+  color: blue;
+}
+p {
+  color: gray;
+}
+.seccion-title {
+  color: red;
+}
+table {
+  background-color: black;
+}
+tr {
+  background-color: gray;
+  text-align: center;
+}
+th {
+  color: white;
+}
