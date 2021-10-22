@@ -1,10 +1,12 @@
 h1 {
   color: blue;
+  text-align: center;
 }
 p {
   color: gray;
 }
 .seccion-title {
+  text-align: center;
   color: red;
 }
 table {
@@ -16,4 +18,24 @@ tr {
 }
 th {
   color: white;
+}
+/* MENU */
+.menu {
+  background-color: black;
+}
+.menu-list {
+  display: flex;
+  align-items: space-between;
+  list-style: none;
+}
+.menu-list > li {
+  margin: 10px;
+}
+.menu-list > li > a {
+  text-decoration: none;
+  color: aliceblue;
+}
+.menu-list > li > a:hover {
+  color: orange;
+  cursor: pointer;
 }
