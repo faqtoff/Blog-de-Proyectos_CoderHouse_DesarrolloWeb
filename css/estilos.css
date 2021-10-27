@@ -1,0 +1,107 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html {
+  font-size: 62.5%; /*rem config*/
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-size: 16px; /*rem config 1rem=10px*/
+}
+img {
+  max-width: 100%;
+}
+main {
+  padding: 1rem;
+}
+footer {
+  background-color: black;
+  color: aliceblue;
+  padding: 1rem;
+  text-align: center;
+}
+h1 {
+  color: blue;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 400;
+}
+h2 {
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 300;
+}
+h3 {
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 700;
+}
+p {
+  color: gray;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  line-height: 3rem;
+}
+.seccion-title {
+  text-align: center;
+  color: red;
+}
+table {
+  background-color: black;
+}
+tr {
+  background-color: gray;
+  text-align: center;
+}
+th {
+  color: white;
+}
+/* MENU */
+.menu {
+  background-color: black;
+}
+.menu-list {
+  display: flex;
+  align-items: space-between;
+  list-style: none;
+}
+.menu-list > li {
+  margin: 10px;
+}
+.menu-list > li > a {
+  text-decoration: none;
+  color: aliceblue;
+}
+.menu-list > li > a:hover {
+  color: orange;
+  cursor: pointer;
+}
+/*Clases*/
+.textRigth {
+  text-align: end;
+}
+.textCenter {
+  text-align: center;
+}
+.textLeft {
+  text-align: left;
+}
+/*Encuestas*/
+.encuestas {
+  background-image: url(/assets/interrogar.jpeg);
+  background-position: top center;
+  background-size: cover;
+}
