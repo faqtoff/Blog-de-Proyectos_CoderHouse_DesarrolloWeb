@@ -29,8 +29,9 @@ main {
 }
 footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
   justify-content: space-between;
+  line-height: 3rem;
   background-color: black;
   color: aliceblue;
   padding: 2rem;
@@ -38,6 +39,7 @@ footer {
 }
 footer .socialMedia i {
   margin: 0 1rem;
+  font-size: 2rem;
 }
 footer .socialMedia i:hover {
   color: orange;
@@ -152,10 +154,12 @@ th {
   border: solid 2px black;
   padding: 3rem;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .index .inicio .text,
 .index .inicio .video {
-  width: 50%;
+  width: 100%;
   display: inline-block;
   text-align: justify;
 }
@@ -167,7 +171,7 @@ th {
 .indexEncuestasWrapper {
   padding: 3rem;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
 }
 .indexNoticiasWrapper article {
   margin: 2rem;
@@ -190,6 +194,7 @@ th {
 .proyectos {
   padding: 2rem;
   display: flex;
+  flex-direction: column;
 }
 .proyectos article {
   padding: 2rem;
@@ -199,4 +204,69 @@ th {
 }
 .proyectos article:last-of-type {
   margin-right: 0;
+}
+/******************* CONTACTO HTML*/
+.contactoPage form fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+@media only screen and (min-width: 480px) {
+  .index .inicio {
+    flex-direction: row;
+  }
+  .indexNoticiasWrapper,
+  .indexEncuestasWrapper {
+    flex-direction: row-reverse;
+  }
+
+  .proyectos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contactoPage form fieldset {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .menu-list > li > p,
+  .menu-list > li > a {
+    font-size: 2rem;
+  }
+  .index .inicio {
+    flex-direction: row;
+  }
+  .indexNoticiasWrapper,
+  .indexEncuestasWrapper {
+    flex-direction: row-reverse;
+  }
+
+  .proyectos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contactoPage form fieldset {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer {
+    padding: 3rem;
+    text-align: center;
+    align-content: center;
+    font-size: 2rem;
+  }
+  footer .socialMedia i {
+    font-size: 3rem;
+  }
 }
