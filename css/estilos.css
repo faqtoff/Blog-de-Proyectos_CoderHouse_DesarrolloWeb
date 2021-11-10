@@ -32,7 +32,18 @@ footer {
   flex-direction: column-reverse;
   justify-content: space-between;
   line-height: 3rem;
-  background-color: black;
+  background: #c31432; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #240b36,
+    #c31432
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #240b36,
+    #c31432
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   color: aliceblue;
   padding: 2rem;
   text-align: center;
@@ -45,14 +56,25 @@ footer .socialMedia i:hover {
   color: orange;
 }
 h1 {
-  color: blue;
   font-size: 5rem;
   font-weight: 400;
+
+  color: #c31432; /* fallback for old browsers */
+  color: -webkit-linear-gradient(
+    to right,
+    #240b36,
+    #c31432
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  color: linear-gradient(
+    to right,
+    #240b36,
+    #c31432
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 h2 {
   text-transform: capitalize;
   text-align: center;
-  font-weight: 300;
+  font-weight: bolder;
 }
 h3 {
   text-transform: capitalize;
@@ -67,7 +89,21 @@ p {
 }
 .seccion-title {
   text-align: center;
-  color: red;
+  color: #c31432; /* fallback for old browsers */
+  color: -webkit-linear-gradient(
+    to right,
+    #240b36,
+    #c31432
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  color: linear-gradient(
+    to right,
+    #240b36,
+    #c31432
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.seccion-title:hover {
+  transition: 3s;
+  transform: translate(-20%); /* Equivalente a translateX(10px) */
 }
 table {
   background-color: black;
@@ -81,7 +117,17 @@ th {
 }
 /* MENU */
 .menu {
-  background-color: black;
+  background: #c31432; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #240b36,
+    #c31432
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #240b36,
+    #c31432
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .menu-list {
   list-style: none;
@@ -95,7 +141,17 @@ th {
 }
 .menu-list li:hover ul {
   display: block;
-  background-color: black;
+  background: #c31432; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #240b36,
+    #c31432
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #240b36,
+    #c31432
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   list-style: none;
 }
 .menu-list li ul {
@@ -116,7 +172,8 @@ th {
   color: aliceblue;
 }
 .menu-list > li > a:hover {
-  color: orange;
+  transition: 1s;
+  font-size: 3rem;
   cursor: pointer;
 }
 /* BANNER */
@@ -179,8 +236,28 @@ th {
   border: solid 1px black;
   border-radius: 1rem;
 }
+.indexNoticiasWrapper article:hover {
+  transition: 1s;
+
+  background-color: #bdc3c7; /* fallback for old browsers */
+  background-color: -webkit-linear-gradient(
+    to right,
+    #2c3e50,
+    #bdc3c7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background-color: linear-gradient(
+    to right,
+    #2c3e50,
+    #bdc3c7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: black;
+  transform: scale(1.2);
+}
 .indexNoticiasWrapper article img {
   width: 100%;
+}
+.indexNoticiasWrapper article img:hover {
+  transition: 2s;
 }
 /******************* ENCUESTAS HTML*/
 .encuestas {
@@ -201,11 +278,31 @@ th {
   border: solid 1px black;
   border-radius: 1rem;
   margin-right: 1rem;
+  margin-top: 1rem;
 }
 .proyectos article:last-of-type {
   margin-right: 0;
 }
+.proyectos article:hover {
+  transition: 1s;
+
+  background-color: #bdc3c7; /* fallback for old browsers */
+  background-color: -webkit-linear-gradient(
+    to right,
+    #2c3e50,
+    #bdc3c7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background-color: linear-gradient(
+    to right,
+    #2c3e50,
+    #bdc3c7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: black;
+}
 /******************* CONTACTO HTML*/
+.contactoPage {
+  min-height: 55vh;
+}
 .contactoPage form fieldset {
   display: flex;
   flex-direction: column;
