@@ -101,10 +101,6 @@ p {
     #c31432
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-.seccion-title:hover {
-  transition: 3s;
-  transform: translate(-20%); /* Equivalente a translateX(10px) */
-}
 table {
   background-color: black;
 }
@@ -261,11 +257,22 @@ th {
 }
 /******************* ENCUESTAS HTML*/
 .encuestas {
-  background-image: url(/assets/interrogar.jpeg);
   background-position: top center;
   background-size: cover;
   height: 100vh;
   padding: 2rem;
+}
+.encuesta-title {
+  font-size: 3rem;
+  text-align: center;
+}
+.btn-group-lg {
+  display: flex;
+}
+.encuestas-resultados {
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
 }
 /******************* PROYECTOS HTML*/
 .proyectos {
@@ -279,6 +286,13 @@ th {
   border-radius: 1rem;
   margin-right: 1rem;
   margin-top: 1rem;
+  min-height: 70rem;
+  width: 100%;
+}
+.proyectos article {
+  height: 250px;
+  width: 30rem;
+  object-fit: cover;
 }
 .proyectos article:last-of-type {
   margin-right: 0;
@@ -303,11 +317,27 @@ th {
 .contactoPage {
   min-height: 55vh;
 }
+.contactoPage .seccion-title {
+  font-size: 3rem;
+}
 .contactoPage form fieldset {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  padding: 5rem;
+}
+.contactoPage form {
+  font-size: 2rem;
+}
+.form-control {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.contactoPage form button {
+  font-size: 2rem;
+  border-radius: 2.2rem;
+  padding: 1rem 2rem;
 }
 
 @media only screen and (min-width: 480px) {
@@ -320,11 +350,6 @@ th {
   }
 
   .proyectos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .contactoPage form fieldset {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -350,11 +375,6 @@ th {
   .proyectos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  .contactoPage form fieldset {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
   }
 
   footer {
