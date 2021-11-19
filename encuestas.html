@@ -10,34 +10,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/main.css">
 
     <title>Encuestas</title>
 </head>
 <body>
   <header>
-      <h1 class="textCenter">Blog de Proyectos</h1>
-      <nav class="menu">
-          <ul class="menu-list">
-              <li><a href="index.html">Inicio</a></li>
-              <li><a href="proyectos.html">Proyectos</a></li>
-              <li><a href="encuestas.html">Encuestas</a></li>
-              <li class="dropdown">
-                <button  class="menu-link dropdown-toggle" type="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                  Informacion
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <li><a class="menu-link" href="informacion.html">Informacion</a></li>
-                  <li><a class="menu-link" href="contacto.html">Contacto</a></li>
-                </ul>
-              </li>
-              <li>
-                <button type="button" class="" data-bs-toggle="modal" data-bs-target="#iniciarSesionModal">
-                  Iniciar Sesion 
-                </button>
-              </li>
+    <h1 class="text-center">Blog de Proyectos</h1>
+    <nav class="menu">
+      <ul class="menu__list">
+        <li><a class="menu__list--link" href="index.html">Inicio</a></li>
+        <li><a class="menu__list--link" href="proyectos.html">Proyectos</a></li>
+        <li><a class="menu__list--link" href="encuestas.html">Encuestas</a></li>
+        <li class="dropdown">
+          <button  class="menu__list--link dropdown-toggle" type="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            Informacion
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="menu__list--link" href="informacion.html">Informacion</a></li>
+            <li><a class="menu__list--link" href="contacto.html">Contacto</a></li>
           </ul>
-      </nav>
+        </li>
+        <li>
+          <button type="button" class="menu__list--link" data-bs-toggle="modal" data-bs-target="#iniciarSesionModal">
+            Iniciar Sesion 
+          </button>
+        </li>
+      </ul>
+    </nav>
   </header>
 
   <!-- Modal Iniciar Sesion-->
@@ -51,7 +51,7 @@
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
 
-                  <div class="modal-body iniciar-sesion-body">
+                  <div class="modal-body iniciarSesion__body">
                     <i class="fas fa-users fa-7x"></i>
                     <button type="button" class="btn btn-danger m-5">Google</button>
                   </div>
@@ -61,65 +61,78 @@
   </section>
 
     <main class="encuestas">
-        <h2 class="seccion-title">Encuestas</h2>
-            <div class="row">
-                <div class="col-sm-6">
-                  <div class="card h-100">
-                    <div class="card-body">
-                      <h5 class="encuesta-title card-title">Encuesta 1</h5>
-                      <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam minus repudiandae ratione ea odit reiciendis. Totam explicabo sapiente et necessitatibus minima, ullam ipsum saepe earum minus autem, veniam maiores corrupti.</p>
-                      <div class="btn-encuesta btn-group btn-group-lg" role="group" aria-label="Basic outlined example">
-                        <button type="button" class="btn btn-outline-primary">Si</button>
-                        <button type="button" class="btn btn-outline-primary">No</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="card h-100">
-                    <div class="card-body">
-                      <h5 class="encuesta-title card-title">Encuesta 2</h5>
-                      <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam minus repudiandae ratione ea odit reiciendis. Totam explicabo sapiente et necessitatibus minima, ullam ipsum saepe earum minus autem, veniam maiores corrupti.</p>
-                      <div class="encuestas-resultados">
-                          <p>Si: 75%</p>
-                          <p>no: 25%</p>
-                      </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+        
+      <h2 class="seccion-title">Encuestas</h2>
+        
+      <!--ROW-->
+      <div class="row">
+        
+        <!--ENCUESTA-->
+        <div class="col-sm-6">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="encuestas__title card-title">Encuesta 1</h5>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam minus repudiandae ratione ea odit reiciendis. Totam explicabo sapiente et necessitatibus minima, ullam ipsum saepe earum minus autem, veniam maiores corrupti.</p>
+              <div class="btn-encuesta btn-group btn-group-lg" role="group" aria-label="Basic outlined example">
+                <button type="button" class="btn btn-outline-primary">Si</button>
+                <button type="button" class="btn btn-outline-primary">No</button>
+              </div>
             </div>
-            <div class="row mt-4">
-                <div class="col-sm-6">
-                  <div class="card h-100">
-                    <div class="card-body">
-                      <h5 class="encuesta-title card-title">Encuesta 3</h5>
-                      <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam minus repudiandae ratione ea odit reiciendis. Totam explicabo sapiente et necessitatibus minima, ullam ipsum saepe earum minus autem, veniam maiores corrupti.</p>
-                      <div class="encuestas-resultados">
-                          <p>Si: 15%</p>
-                          <p>no: 85%</p>
-                      </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width: 15%"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="card h-100">
-                    <div class="card-body">
-                      <h5 class="encuesta-title card-title">Encuesta 4</h5>
-                      <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam minus repudiandae ratione ea odit reiciendis. Totam explicabo sapiente et necessitatibus minima, ullam ipsum saepe earum minus autem, veniam maiores corrupti.</p>
-                      <div class="btn-encuesta btn-group btn-group-lg" role="group" aria-label="Basic outlined example">
-                        <button type="button" class="btn btn-outline-primary">Si</button>
-                        <button type="button" class="btn btn-outline-primary">No</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+          </div>
+        </div>
+
+        <!--ENCUESTA-->
+        <div class="col-sm-6">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="encuestas__title card-title">Encuesta 2</h5>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam minus repudiandae ratione ea odit reiciendis. Totam explicabo sapiente et necessitatibus minima, ullam ipsum saepe earum minus autem, veniam maiores corrupti.</p>
+              <div class="encuestas__resultados">
+                <p>Si: 75%</p>
+                <p>no: 25%</p>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+              </div>
             </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!--ROW-->
+      <div class="row mt-4">
+        <!--ENCUESTA-->
+        <div class="col-sm-6">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="encuestas__title card-title">Encuesta 3</h5>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam minus repudiandae ratione ea odit reiciendis. Totam explicabo sapiente et necessitatibus minima, ullam ipsum saepe earum minus autem, veniam maiores corrupti.</p>
+              <div class="encuestas__resultados">
+                <p>Si: 15%</p>
+                <p>no: 85%</p>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width: 15%"></div>                </div>
+            </div>
+          </div>
+        </div>
+
+        <!--ENCUESTA-->
+        <div class="col-sm-6">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="encuestas__title card-title">Encuesta 4</h5>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam minus repudiandae ratione ea odit reiciendis. Totam explicabo sapiente et necessitatibus minima, ullam ipsum saepe earum minus autem, veniam maiores corrupti.</p>
+              <div class="btn-encuesta btn-group btn-group-lg" role="group" aria-label="Basic outlined example">
+                <button type="button" class="btn btn-outline-primary">Si</button>
+                <button type="button" class="btn btn-outline-primary">No</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </main>
 
     <footer>
