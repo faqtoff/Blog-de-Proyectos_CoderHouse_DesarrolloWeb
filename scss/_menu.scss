@@ -1,7 +1,27 @@
 /* MENU */
 .menu {
   background: $primary;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  position: fixed;
+  width: 100%;
+  height: 7rem;
 
+  .menu__link--brand {
+    color: aliceblue;
+    margin: 2rem;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+
+    &:hover {
+      transition: 1s;
+      font-size: 3rem;
+      cursor: pointer;
+    }
+  }
   .menu__list {
     list-style: none;
     display: flex;

@@ -52,7 +52,24 @@ table {
 
 /* MENU */
 .menu {
-  background: linear-gradient(to right, #240b36, #c31432); }
+  background: linear-gradient(to right, #240b36, #c31432);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  position: fixed;
+  width: 100%;
+  height: 7rem; }
+  .menu .menu__link--brand {
+    color: aliceblue;
+    margin: 2rem;
+    text-decoration: none;
+    background-color: transparent;
+    border: none; }
+    .menu .menu__link--brand:hover {
+      transition: 1s;
+      font-size: 3rem;
+      cursor: pointer; }
   .menu .menu__list {
     list-style: none;
     display: flex;
@@ -98,10 +115,9 @@ footer {
       color: orange; }
 
 h1 {
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: 400;
-  color: linear-gradient(to right, #240b36, #c31432);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  color: linear-gradient(to right, #240b36, #c31432); }
 
 h2 {
   text-transform: capitalize;
@@ -121,62 +137,60 @@ p {
 
 .seccion-title {
   text-align: center;
-  color: linear-gradient(to right, #240b36, #c31432);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  color: linear-gradient(to right, #240b36, #c31432); }
 
 /******************* INDEX HTML*/
-.index .inicio {
-  border: solid 2px black;
-  padding: 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .index .inicio .inicio__video,
-  .index .inicio .inicio__text {
-    width: 100%;
-    display: inline-block;
-    text-align: justify; }
-
-.index .banner {
-  margin-top: 2rem;
-  background-image: url(../assets/BANNER.jpg);
-  height: 40rem;
-  background-position: center center;
-  background-size: cover;
-  display: flex;
-  align-items: center; }
-  .index .banner .banner__body {
-    flex: 1;
-    color: white;
-    padding: 2rem; }
-    .index .banner .banner__body p {
-      font-size: 1.8rem; }
-
-.index .encuestas {
-  padding: 3rem; }
-  .index .encuestas .encuestas__body {
+.index {
+  margin-top: 7rem; }
+  .index .inicio {
+    border: solid 2px black;
     padding: 3rem;
     display: flex;
-    flex-direction: column; }
-
-.index .noticias .noticias__body {
-  padding: 3rem;
-  display: flex;
-  flex-direction: row; }
-  .index .noticias .noticias__body article {
-    margin: 2rem;
-    padding: 2rem;
-    border: solid 1px black;
-    border-radius: 1rem; }
-    .index .noticias .noticias__body article:hover {
-      transition: 1s;
-      background-color: linear-gradient(to right, #2c3e50, #bdc3c7);
-      color: black;
-      transform: scale(1.2); }
-      .index .noticias .noticias__body article:hover img {
-        width: 100%; }
-        .index .noticias .noticias__body article:hover img:hover {
-          transition: 2s; }
+    flex-direction: column;
+    align-items: center; }
+    .index .inicio .inicio__video,
+    .index .inicio .inicio__text {
+      width: 100%;
+      display: inline-block;
+      text-align: justify; }
+  .index .banner {
+    margin-top: 2rem;
+    background-image: url(../assets/BANNER.jpg);
+    height: 40rem;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center; }
+    .index .banner .banner__body {
+      flex: 1;
+      color: white;
+      padding: 2rem; }
+      .index .banner .banner__body p {
+        font-size: 1.8rem; }
+  .index .encuestas {
+    padding: 3rem; }
+    .index .encuestas .encuestas__body {
+      padding: 3rem;
+      display: flex;
+      flex-direction: column; }
+  .index .noticias .noticias__body {
+    padding: 3rem;
+    display: flex;
+    flex-direction: row; }
+    .index .noticias .noticias__body article {
+      margin: 2rem;
+      padding: 2rem;
+      border: solid 1px black;
+      border-radius: 1rem; }
+      .index .noticias .noticias__body article:hover {
+        transition: 1s;
+        background-color: linear-gradient(to right, #2c3e50, #bdc3c7);
+        color: black;
+        transform: scale(1.2); }
+        .index .noticias .noticias__body article:hover img {
+          width: 100%; }
+          .index .noticias .noticias__body article:hover img:hover {
+            transition: 2s; }
 
 /******************* PROYECTOS HTML*/
 .proyectos {

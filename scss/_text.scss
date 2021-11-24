@@ -1,8 +1,8 @@
 h1 {
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: 400;
 
-  color: $primary; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: $primary;
 }
 h2 {
   text-transform: capitalize;
@@ -22,5 +22,5 @@ p {
 }
 .seccion-title {
   text-align: center;
-  color: $primary; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: $primary;
 }
