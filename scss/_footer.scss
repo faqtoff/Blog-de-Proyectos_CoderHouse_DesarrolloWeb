@@ -1,0 +1,20 @@
+footer {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  line-height: 3rem;
+  background: $primary; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: aliceblue;
+  padding: 2rem;
+  text-align: center;
+  .socialMedia {
+    i {
+      margin: 0 1rem;
+      font-size: 2rem;
+      &:hover {
+        color: $orange;
+      }
+    }
+  }
+}

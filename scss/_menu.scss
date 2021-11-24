@@ -1,0 +1,42 @@
+/* MENU */
+.menu {
+  background: $primary;
+
+  .menu__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ul {
+      position: absolute;
+      display: none;
+      li {
+        margin: 10px;
+        display: block;
+        ul {
+          padding: 0;
+        }
+        &:hover {
+          ul {
+            display: inline-block;
+            background: $primary;
+            list-style: none;
+          }
+        }
+      }
+    }
+    .menu__list--link {
+      color: aliceblue;
+      margin: 2rem;
+      text-decoration: none;
+      background-color: transparent;
+      border: none;
+
+      &:hover {
+        transition: 1s;
+        font-size: 3rem;
+        cursor: pointer;
+      }
+    }
+  }
+}
