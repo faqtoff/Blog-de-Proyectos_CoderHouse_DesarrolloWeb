@@ -1,18 +1,13 @@
 h1 {
   font-size: 3rem;
   font-weight: 400;
-
   color: $primary;
 }
 h2 {
   text-transform: capitalize;
-  text-align: center;
-  font-weight: bolder;
 }
 h3 {
   text-transform: capitalize;
-  text-align: center;
-  font-weight: 700;
 }
 p {
   color: $gray;
@@ -23,4 +18,15 @@ p {
 .seccion-title {
   text-align: center;
   color: $primary;
+}
+
+@for $i from 1 through 6 {
+  .text-#{$i} {
+    font-size: 2rem + $i;
+  }
+}
+@for $i from 1 through 6 {
+  .fw-#{$i} {
+    font-size: 200 + ($i * 100);
+  }
 }
