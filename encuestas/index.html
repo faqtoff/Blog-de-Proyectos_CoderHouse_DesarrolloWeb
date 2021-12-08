@@ -18,130 +18,106 @@
 </head>
 <body>
   <header>
-    <nav class="menu">
-      <a class="menu__link--brand" rel="folow" href="/">
-        <span class="text-center">Blog de Proyectos</span>
-      </a>
-      <ul class="menu__list">
-        <li><a class="menu__list--link" rel="folow" href="/proyectos">Proyectos</a></li>
-        <li><a class="menu__list--link" rel="folow" href="/encuestas">Encuestas</a></li>
-        <li class="dropdown">
-          <button  class="menu__list--link dropdown-toggle" type="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-            Informacion
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <li><a class="menu__list--link" rel="folow" href="/informacion.html">Informacion</a></li>
-            <li><a class="menu__list--link" rel="folow" href="/contacto.html">Contacto</a></li>
+      <!-- Navbar -->
+      <nav class="navbar--faqstyle bg--primary">
+          <label class="navbar__brand">
+              <a class="navbar__link" rel="folow" href="/">Blog de Proyectos</a>
+          </label>
+          <ul class="navbar__linkGroup">
+              <li><a class="navbar__link" rel="folow" href="/proyectos/">Proyectos</a></li>
+              <li><a class="navbar__link active" rel="folow" href="/encuestas">Encuestas</a></li>
+              <li><a class="navbar__link" rel="folow" href="/informacion.html">Informacion</a></li>
+              <li><a class="navbar__link" rel="folow" href="/contacto.html">Contacto</a></li>
+              <li>
+                  <button type="button" class="navbar__link" data-bs-toggle="modal" data-bs-target="#iniciarSesionModal">
+                      Iniciar Sesion 
+                  </button>
+              </li>
           </ul>
-        </li>
-        <li>
-          <button type="button" class="menu__list--link" data-bs-toggle="modal" data-bs-target="#iniciarSesionModal">
-            Iniciar Sesion 
-          </button>
-        </li>
-      </ul>
-    </nav>
+          <span className='navbar__btn'>
+              <i className="fas fa-bars"></i>
+          </span>
+      </nav>
   </header>
 
-  <!-- Modal Iniciar Sesion-->
-  <section>
-    <div class="modal fade" id="iniciarSesionModal" tabindex="-1" aria-labelledby="iniciarSesionModal" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="iniciarSesionModal">Iniciar Sesion</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body iniciarSesion__body">
-            <i class="fas fa-users fa-7x"></i>
-            <button type="button" class="btn btn-danger m-5">Google</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <main class="encuestas">
+  <main class="conteiner">
         
-    <h1 class="seccion-title">Encuestas</h1>
+    <h1 class="display--1 text-center">Encuestas</h1>
         
-    <!--ROW-->
-    <div class="row">
+    <div class="grid grid--sm--1 grid--med--2 grid--larg--2 grid--xl--2">
         
       <!--ENCUESTA-->
-      <div class="col-sm-6">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="encuestas__title card-title">Encuesta 1</h5>
-            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam minus repudiandae ratione ea odit reiciendis. Totam explicabo sapiente et necessitatibus minima, ullam ipsum saepe earum minus autem, veniam maiores corrupti.</p>
-            <div class="btn-encuesta btn-group btn-group-lg" role="group" aria-label="Basic outlined example">
-              <button type="button" class="btn btn-outline-primary">Si</button>
-              <button type="button" class="btn btn-outline-primary">No</button>
-            </div>
-          </div>
+      <div class="card">
+        <h5 class="text-center display--3 mb--1">Encuesta 1</h5>
+        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam minus repudiandae ratione ea odit reiciendis. Totam explicabo sapiente et necessitatibus minima, ullam ipsum saepe earum minus autem, veniam maiores corrupti.</p>
+        <div class="grid--2">
+          <button type="button" class="boton--e bg--primary e--1--success">
+            <span>Si</span>
+          </button>
+          <button type="button" class="boton--e bg--primary e--1--error">
+            <span>No</span>
+          </button>
         </div>
       </div>
 
       <!--ENCUESTA-->
-      <div class="col-sm-6">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="encuestas__title card-title">Encuesta 2</h5>
-            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam minus repudiandae ratione ea odit reiciendis. Totam explicabo sapiente et necessitatibus minima, ullam ipsum saepe earum minus autem, veniam maiores corrupti.</p>
-            <div class="encuestas__resultados">
-              <p>Si: 75%</p>
-              <p>no: 25%</p>
-            </div>
-            <div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-            </div>
-          </div>
+      <div class="card">
+        <h5 class="text-center display--3 mb--1">Encuesta 2</h5>
+        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam minus repudiandae ratione ea odit reiciendis. Totam explicabo sapiente et necessitatibus minima, ullam ipsum saepe earum minus autem, veniam maiores corrupti.</p>
+        <div class="grid--2">
+          <p class="text-start">Si: 75%</p>
+          <p class="text-end">No: 25%</p>
         </div>
-      </div>
-
-    </div>
-
-    <!--ROW-->
-    <div class="row mt-4">
-      <!--ENCUESTA-->
-      <div class="col-sm-6">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="encuestas__title card-title">Encuesta 3</h5>
-            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam minus repudiandae ratione ea odit reiciendis. Totam explicabo sapiente et necessitatibus minima, ullam ipsum saepe earum minus autem, veniam maiores corrupti.</p>
-            <div class="encuestas__resultados">
-              <p>Si: 15%</p>
-              <p>no: 85%</p>
-            </div>
-            <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width: 15%"></div>                </div>
-          </div>
+        <div class="progressbar">
+          <div role="progressbar" style="width: 75%"></div>
         </div>
       </div>
 
       <!--ENCUESTA-->
-      <div class="col-sm-6">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="encuestas__title card-title">Encuesta 4</h5>
-            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam minus repudiandae ratione ea odit reiciendis. Totam explicabo sapiente et necessitatibus minima, ullam ipsum saepe earum minus autem, veniam maiores corrupti.</p>
-            <div class="btn-encuesta btn-group btn-group-lg" role="group" aria-label="Basic outlined example">
-              <button type="button" class="btn btn-outline-primary">Si</button>
-              <button type="button" class="btn btn-outline-primary">No</button>
-            </div>
-          </div>
+      <div class="card">
+        <h5 class="text-center display--3 mb--1">Encuesta 3</h5>
+        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam minus repudiandae ratione ea odit reiciendis. Totam explicabo sapiente et necessitatibus minima, ullam ipsum saepe earum minus autem, veniam maiores corrupti.</p>
+        <div class="grid--2">
+          <p class="text-start">Si: 75%</p>
+          <p class="text-end">No: 25%</p>
+        </div>
+        <div class="progressbar">
+          <div role="progressbar"style="width: 15%"></div>                
+        </div>
+      </div>
+
+      <!--ENCUESTA-->
+      <div class="card">
+        <h5 class="text-center display--3 mb--1">Encuesta 4</h5>
+        <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam minus repudiandae ratione ea odit reiciendis. Totam explicabo sapiente et necessitatibus minima, ullam ipsum saepe earum minus autem, veniam maiores corrupti.</p>
+        <div class="grid--2">
+          <button type="button" class="boton--e bg--primary e--1--success">
+            <span>Si</span>
+          </button>
+          <button type="button" class="boton--e bg--primary e--1--error">
+            <span>No</span>
+          </button>
         </div>
       </div>
 
     </div>
+
   </main>
 
   <footer>
-    2021 - Todos los derechos reservados
-    <div class="socialMedia">
-      <i class="fab fa-facebook"></i>
-      <i class="fab fa-whatsapp"></i>
-      <i class="fab fa-twitter"></i>
+    <div class="footer bg--primary color--white">
+        <span>Blog de Proyectos</span>
+        <div class="btn-social">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-whatsapp"></i>
+            <i class="fab fa-twitter"></i>
+        </div>
+    </div>
+    <div class="faq-footer">
+      <p class='faq-footer--text'>
+          Made with <span class="corazon"></span> by <a href='https://www.faqtoff.com'>@faqtoff</a><br />
+          &copy;2021 - FaqToff_dev
+        </p>
     </div>
   </footer>
   <script src="https://kit.fontawesome.com/ac24783485.js" crossorigin="anonymous"></script>

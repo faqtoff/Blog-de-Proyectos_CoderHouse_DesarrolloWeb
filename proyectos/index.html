@@ -20,97 +20,90 @@
 </head>
 <body>
     <header>
-        <nav class="menu">
-            <a class="menu__link--brand" rel="folow" href="/">
-                <span class="text-center">Blog de Proyectos</span>
-            </a>
-            <ul class="menu__list">
-                <li><a class="menu__list--link" rel="folow" href="/proyectos">Proyectos</a></li>
-                <li><a class="menu__list--link" rel="folow" href="/encuestas">Encuestas</a></li>
-                <li class="dropdown">
-                        <button  class="menu__list--link dropdown-toggle" type="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                            Informacion
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <li><a class="menu__list--link" rel="folow" href="informacion.html">Informacion</a></li>
-                            <li><a class="menu__list--link" rel="folow" href="contacto.html">Contacto</a></li>
-                        </ul>
-                </li>
+        <!-- Navbar -->
+        <nav class="navbar--faqstyle bg--primary">
+            <label class="navbar__brand">
+                <a class="navbar__link" rel="folow" href="/">Blog de Proyectos</a>
+            </label>
+            <ul class="navbar__linkGroup">
+                <li><a class="navbar__link active" rel="folow" href="/proyectos/">Proyectos</a></li>
+                <li><a class="navbar__link" rel="folow" href="/encuestas">Encuestas</a></li>
+                <li><a class="navbar__link" rel="folow" href="/informacion.html">Informacion</a></li>
+                <li><a class="navbar__link" rel="folow" href="/contacto.html">Contacto</a></li>
                 <li>
-                    <button type="button" class="menu__list--link" data-bs-toggle="modal" data-bs-target="#iniciarSesionModal">
+                    <button type="button" class="navbar__link" data-bs-toggle="modal" data-bs-target="#iniciarSesionModal">
                         Iniciar Sesion 
                     </button>
                 </li>
             </ul>
+            <span className='navbar__btn'>
+                <i className="fas fa-bars"></i>
+            </span>
         </nav>
     </header>
-  
-    <!-- Modal Iniciar Sesion-->
-    <section>
-        <div class="modal fade" id="iniciarSesionModal" tabindex="-1" aria-labelledby="iniciarSesionModal" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
 
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="iniciarSesionModal">Iniciar Sesion</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
+    <main class="conteiner">
 
-                    <div class="modal-body iniciarSesion__body">
-                        <i class="fas fa-users fa-7x"></i>
-                        <button type="button" class="btn btn-danger m-5">Google</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <div class="grid grid--sm--1 grid--med--2 grid--larg--3 grid--xl--3">
 
-    <main class="proyectos">
-        <div class="proyectos__body row justify-content-around">
-            <article class="col-5">
-                <h1>Proyecto 1</h1>
-                <img src="../assets/obra.jpg" alt="Imagen_del_Proyecto_1">
+            <article class="card">
+                <h2 class="text-center display--3">Proyecto 1</h2>
+                <img src="../assets/obra.jpg" alt="Imagen_del_Proyecto_1" class="mb--1">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque vero dolor minima tempora! Officia, est? Laudantium, praesentium. Sunt asperiores voluptatibus itaque velit perspiciatis deleniti optio molestias, perferendis odio suscipit accusamus.</p>
             </article>
-            <article class="col-5">
-                <h2>Proyecto 2</h2>
-                <img src="../assets/mito_director_obra_omnipresente_slide.jpg" alt="Imagen_del_Proyecto_2">
+
+            <article class="card">
+                <h2 class="text-center display--3">Proyecto 2</h2>
+                <img src="../assets/mito_director_obra_omnipresente_slide.jpg" alt="Imagen_del_Proyecto_2"  class="mb--1">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque vero dolor minima tempora! Officia, est? Laudantium, praesentium. Sunt asperiores voluptatibus itaque velit perspiciatis deleniti optio molestias, perferendis odio suscipit accusamus.</p>
             </article>
-            <article class="col-5">
-                <h2>Proyecto 3</h2>
-                <img src="../assets/Construccion.jpg" alt="IImagen_del_Proyecto_3">
+
+            <article class="card">
+                <h2 class="text-center display--3">Proyecto 3</h2>
+                <img src="../assets/Construccion.jpg" alt="IImagen_del_Proyecto_3"  class="mb--1">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque vero dolor minima tempora! Officia, est? Laudantium, praesentium. Sunt asperiores voluptatibus itaque velit perspiciatis deleniti optio molestias, perferendis odio suscipit accusamus.</p>
             </article>
-        </div>
-        <div class="proyectos__body  row justify-content-around">
-            <article class="col-5">
-                <h2>Proyecto 4</h2>
-                <img src="../assets/descarga.jpg" alt="Imagen_del_Proyecto_4">
+
+            <article class="card">
+                <h2 class="text-center display--3">Proyecto 4</h2>
+                <img src="../assets/descarga.jpg" alt="Imagen_del_Proyecto_4"  class="mb--1">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque vero dolor minima tempora! Officia, est? Laudantium, praesentium. Sunt asperiores voluptatibus itaque velit perspiciatis deleniti optio molestias, perferendis odio suscipit accusamus.</p>
             </article>
-            <article class="col-5">
-                <h2>Proyecto 5</h2>
-                <img src="../assets/Articuloguateweb.jpg" alt="Imagen_del_Proyecto_5">
+
+            <article class="card">
+                <h2 class="text-center display--3">Proyecto 5</h2>
+                <img src="../assets/Articuloguateweb.jpg" alt="Imagen_del_Proyecto_5"  class="mb--1">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque vero dolor minima tempora! Officia, est? Laudantium, praesentium. Sunt asperiores voluptatibus itaque velit perspiciatis deleniti optio molestias, perferendis odio suscipit accusamus.</p>
             </article>
-            <article class="col-5">
-                <h2>Proyecto 6</h2>
-                <img src="../assets/gruas.jpg" alt="Imagen_del_Proyecto_6">
+
+            <article class="card">
+                <h2 class="text-center display--3">Proyecto 6</h2>
+                <img src="../assets/gruas.jpg" alt="Imagen_del_Proyecto_6"  class="mb--1">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque vero dolor minima tempora! Officia, est? Laudantium, praesentium. Sunt asperiores voluptatibus itaque velit perspiciatis deleniti optio molestias, perferendis odio suscipit accusamus.</p>
             </article>
+
         </div>
 
     </main>
+
     <footer>
-        2021 - Todos los derechos reservados
-        <div class="socialMedia">
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-whatsapp"></i>
-            <i class="fab fa-twitter"></i>
+        <div class="footer bg--primary color--white">
+            <span>Blog de Proyectos</span>
+            <div class="btn-social">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-whatsapp"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+        </div>
+        <div class="faq-footer">
+            <p class='faq-footer--text'>
+                Made with <span class="corazon"></span> by <a href='https://www.faqtoff.com'>@faqtoff</a><br />
+                &copy;2021 - FaqToff_dev
+            </p>
         </div>
     </footer>
+
     <script src="https://kit.fontawesome.com/ac24783485.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </body>
 </html>

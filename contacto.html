@@ -1,104 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
 
-  
+    
     <!-- CEO -->
     <meta name='description' content='Contacto -- Blog de proyectos - Corwfouding' >
     <meta name='author' content="Facundo Toffolo Pasquini" >
     <meta name="copyright" content="Facundo Toffolo Pasquini"> 
 
     <title>Contacto</title>
-</head>
-<body>
-  <header>
-    <nav class="menu">
-      <a class="menu__link--brand" rel="folow" href="index.html">
-        <span class="text-center">Blog de Proyectos</span>
-      </a>
-      <ul class="menu__list">
-        <li><a class="menu__list--link" rel="folow" href="proyectos.html">Proyectos</a></li>
-        <li><a class="menu__list--link" rel="folow" href="encuestas.html">Encuestas</a></li>
-        <li class="dropdown">
-          <button  class="menu__list--link dropdown-toggle" type="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-            Informacion
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <li><a class="menu__list--link" rel="folow" href="informacion.html">Informacion</a></li>
-            <li><a class="menu__list--link" rel="folow" href="contacto.html">Contacto</a></li>
+  </head>
+
+  <body>
+
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar--faqstyle bg--primary">
+          <label class="navbar__brand">
+              <a class="navbar__link" rel="folow" href="index.html">Blog de Proyectos</a>
+          </label>
+          <ul class="navbar__linkGroup">
+              <li><a class="navbar__link" rel="folow" href="proyectos/">Proyectos</a></li>
+              <li><a class="navbar__link" rel="folow" href="encuestas/">Encuestas</a></li>
+              <li><a class="navbar__link" rel="folow" href="informacion.html">Informacion</a></li>
+              <li><a class="navbar__link active" rel="folow" href="contacto.html">Contacto</a></li>
+              <li>
+                  <button type="button" class="navbar__link" data-bs-toggle="modal" data-bs-target="#iniciarSesionModal">
+                      Iniciar Sesion 
+                  </button>
+              </li>
           </ul>
-        </li>
-        <li>
-          <button type="button" class="menu__list--link" data-bs-toggle="modal" data-bs-target="#iniciarSesionModal">
-            Iniciar Sesion 
-          </button>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  
-    <!-- Modal Iniciar Sesion-->
-    <section>
-        <div class="modal fade" id="iniciarSesionModal" tabindex="-1" aria-labelledby="iniciarSesionModal" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="iniciarSesionModal">Iniciar Sesion</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-
-                    <div class="modal-body iniciarSesion__body">
-                        <i class="fas fa-users fa-7x"></i>
-                        <button type="button" class="btn btn-danger m-5">Google</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+          <span className='navbar__btn'>
+              <i className="fas fa-bars"></i>
+          </span>
+      </nav>
+    </header>
     
-    <main class="contacto">
-      <h1 class="seccion-title">Contacto</h1>
-        <form>
-            <fieldset>
+    <main class="conteiner grid--1">
 
-                    <label class="form-label" for="name">Nombre</label>
-                    <input type="text" class="form-control form-control-lg mb-3" name="name" id="name">
+      <h1 class="display-1 text-center">Contacto</h1>
+      <form class="form">
 
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control form-control-lg mb-3" id="email" placeholder="name@example.com">
+          <div class="form__grupo">
+            <label class="form__label" for="name">Nombre</label>
+            <input type="text" class="form__grupo__input" name="name" id="name">
+          </div>
 
-                    <label for="mensaje" class="form-label">Mensaje</label>
-                    <textarea class="form-control form-control-lg mb-3" id="mensaje" rows="10"></textarea>
+          <div class="form__grupo">
+            <label for="email" class="form__label">Email</label>
+            <input type="email" class="form__grupo__input" id="email" placeholder="name@example.com">
+          </div>
 
-                <button class="btn btn-secondary mb-3 btn-lg" type="submit">Enviar</button>
+          <div class="form__grupo col--span--2">
+            <label for="mensaje" class="form__label">Mensaje</label>
+            <textarea class="form__grupo__textarea" id="mensaje" rows="10"></textarea>
+          </div>
+
+          <div class="form__submit">
+            <button class="form__submit__button" type="submit">Enviar</button>
+          </div>
                 
-            </fieldset>
-        </form>
-
+      </form>
 
     </main>
+
     <footer>
-        2021 - Todos los derechos reservados
-        <div class="socialMedia">
+        <div class="footer bg--primary color--white">
+          <span>Blog de Proyectos</span>
+          <div class="btn-social">
             <i class="fab fa-facebook"></i>
             <i class="fab fa-whatsapp"></i>
             <i class="fab fa-twitter"></i>
+          </div>
         </div>
+        <div class="faq-footer">
+          <p class='faq-footer--text'>
+              Made with <span class="corazon"></span> by <a href='https://www.faqtoff.com'>@faqtoff</a><br />
+              &copy;2021 - FaqToff_dev
+          </p>
+      </div>
     </footer>
     <script src="https://kit.fontawesome.com/ac24783485.js" crossorigin="anonymous"></script>
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
-</body>
+  </body>
 </html>

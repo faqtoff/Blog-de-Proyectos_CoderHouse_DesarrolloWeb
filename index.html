@@ -18,78 +18,59 @@
 <body>
     <header>
         <!-- Navbar -->
-        <nav class="menu">
-            <a class="menu__link--brand" rel="folow" href="index.html">
-                <h1 class="text-center">Blog de Proyectos</h1>
-            </a>
-            <ul class="menu__list">
-                <li><a class="menu__list--link" rel="folow" href="proyectos/">Proyectos</a></li>
-                <li><a class="menu__list--link" rel="folow" href="encuestas/">Encuestas</a></li>
-                <li class="dropdown">
-                        <button  class="menu__list--link dropdown-toggle" type="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                            Informacion
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <li><a class="menu__list--link" rel="folow" href="informacion.html">Informacion</a></li>
-                            <li><a class="menu__list--link" rel="folow" href="contacto.html">Contacto</a></li>
-                        </ul>
-                </li>
+        <nav class="navbar--faqstyle bg--primary">
+            <label class="navbar__brand">
+                <a class="navbar__link" rel="folow" href="index.html">Blog de Proyectos</a>
+            </label>
+            <ul class="navbar__linkGroup">
+                <li><a class="navbar__link" rel="folow" href="proyectos/">Proyectos</a></li>
+                <li><a class="navbar__link" rel="folow" href="encuestas/">Encuestas</a></li>
+                <li><a class="navbar__link" rel="folow" href="informacion.html">Informacion</a></li>
+                <li><a class="navbar__link" rel="folow" href="contacto.html">Contacto</a></li>
                 <li>
-                    <button type="button" class="menu__list--link" data-bs-toggle="modal" data-bs-target="#iniciarSesionModal">
+                    <button type="button" class="navbar__link" data-bs-toggle="modal" data-bs-target="#iniciarSesionModal">
                         Iniciar Sesion 
                     </button>
                 </li>
             </ul>
+            <span className='navbar__btn'>
+                <i className="fas fa-bars"></i>
+            </span>
         </nav>
     </header>
   
-    <!-- Modal Iniciar Sesion-->
-    <section>
-        <div class="modal fade" id="iniciarSesionModal" tabindex="-1" aria-labelledby="iniciarSesionModal" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="iniciarSesionModal">Iniciar Sesion</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-
-                    <div class="modal-body iniciarSesion__body">
-                        <i class="fas fa-users fa-7x"></i>
-                        <button type="button" class="btn btn-danger m-5">Google</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <main class="index">
-        <section class="inicio">
-            <div class="video">
+
+        <section class="conteiner grid grid--sm--1 grid--med--2 grid--larg--2 grid--xl--2">
+            <div class="">
                 <img src="assets/img1.jpg" alt="Imagen_de_pagina">
             </div>
-            <div class="text">
+            <div class="card">
+                <h1 class="text-center display--2">Blog de Proyectos</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio vitae officia excepturi eos, sint perferendis, distinctio molestias nisi itaque eligendi cupiditate numquam pariatur alias assumenda ex fuga non? Recusandae, perferendis!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus repellat voluptatem architecto modi dignissimos</p>
             </div>
         </section>
 
         <hr/>
         <!--BANNER-->
-        <section class="banner">
+        <!-- <section class="banner">
             <div class="contenedor banner__body">
                 <h2>Blog de Proyectos</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores sapiente fugit delectus veniam assumenda labore asperiores magni autem deleniti corrupti? Reiciendis, ab. Deserunt aliquid animi distinctio totam inventore at hic!</p>
             </div>
-        </section>
+        </section> -->
+
         <!--Encuestas-->
-        <section class="encuestas">
-            <h2 class="seccion-title">Encuestas</h2>
-            <div class="encuestas__body">
-                <article>
+        <section class="conteiner mt-2">
+            <h2 class="text-center display--3">Encuestas</h2>
+            <div class="grid--sm--1 grid--med--2 grid--larg--2 grid--xl--2">
+                <article class="conteiner-fluid text-center">
                     <h3>Encuesta 1</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam molestiae tenetur fugit non quia repudiandae, aliquid quae, natus omnis officiis minus dicta. Consectetur earum quisquam corrupti? Sint cum vitae nisi?</p>
                 </article>
-                <article>
+                <article class="conteiner-fluid text-center">
                     <h3>Encuesta 2</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam molestiae tenetur fugit non quia repudiandae, aliquid quae, natus omnis officiis minus dicta. Consectetur earum quisquam corrupti? Sint cum vitae nisi?</p>
                 </article>
@@ -98,33 +79,39 @@
 
         <hr/>
 
-        <section class="noticias">
-            <h2  class="seccion-title">Noticias</h2>
-            <div class="noticias__body">
-                <article>
+        <section class="conteiner mt-2">
+            <h2  class="text-center display--3">Noticias</h2>
+            <div class="grid grid--sm--1 grid--med--2 grid--larg--2 grid--xl--2">
+                <article class="card conteiner text-center">
                     <h3>Proyecto 1</h3>
                     <img src="./assets/450_1000.jpg" alt="Imagen_del_Proyecto_1">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque vero dolor minima tempora! Officia, est? Laudantium, praesentium. Sunt asperiores voluptatibus itaque velit perspiciatis deleniti optio molestias, perferendis odio suscipit accusamus.</p>
+                    <p class="mt--1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque vero dolor minima tempora! Officia, est? Laudantium, praesentium. Sunt asperiores voluptatibus itaque velit perspiciatis deleniti optio molestias, perferendis odio suscipit accusamus.</p>
                 </article>
-                <article>
+                <article class="card conteiner text-center">
                     <h3>Proyecto 2</h3>
                     <img src="./assets/resumen-noticias-ciberseguridad-agosto.jpg" alt="Imagen_del_Proyecto_2">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque vero dolor minima tempora! Officia, est? Laudantium, praesentium. Sunt asperiores voluptatibus itaque velit perspiciatis deleniti optio molestias, perferendis odio suscipit accusamus.</p>
+                    <p class="mt--1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque vero dolor minima tempora! Officia, est? Laudantium, praesentium. Sunt asperiores voluptatibus itaque velit perspiciatis deleniti optio molestias, perferendis odio suscipit accusamus.</p>
                 </article>
             </div>
         </section>
     </main>
 
     <footer>
-        2021 - Todos los derechos reservados
-
-        <div class="socialMedia">
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-whatsapp"></i>
-            <i class="fab fa-twitter"></i>
+        <div class="footer bg--primary color--white">
+            <span>Blog de Proyectos</span>
+            <div class="btn-social">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-whatsapp"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+        </div>
+        <div class="faq-footer">
+            <p class='faq-footer--text'>
+                Made with <span class="corazon"></span> by <a href='https://www.faqtoff.com'>@faqtoff</a><br />
+                &copy;2021 - FaqToff_dev
+            </p>
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/ac24783485.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
