@@ -598,7 +598,7 @@ code {
   grid-column: span 12; }
 
 /* Moviles Grandes */
-@media only screen and (min-device-width: 576px) and (max-device-width: 768px) {
+@media only screen and (min-device-width: 576px) {
   .grid--sm--1 {
     display: grid;
     gap: 20px;
@@ -685,7 +685,7 @@ code {
     grid-column: span 12; } }
 
 /* Tablets */
-@media only screen and (min-device-width: 768px) and (max-device-width: 992px) {
+@media only screen and (min-device-width: 768px) {
   .grid--med--1 {
     display: grid;
     gap: 20px;
@@ -772,7 +772,7 @@ code {
     grid-column: span 12; } }
 
 /* Pequeños Monitores */
-@media only screen and (min-device-width: 992px) and (max-device-width: 1200px) {
+@media only screen and (min-device-width: 992px) {
   .grid--larg--1 {
     display: grid;
     gap: 20px;
