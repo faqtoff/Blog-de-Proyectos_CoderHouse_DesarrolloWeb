@@ -23,16 +23,16 @@
       <!-- Navbar -->
       <nav class="navbar--faqstyle bg--primary">
           <label class="navbar__brand">
-              <a class="navbar__link" rel="folow" href="/">Blog de Proyectos</a>
+              <a class="navbar__link" rel="folow" href="index.html">Blog de Proyectos</a>
           </label>
-          <ul class="navbar__linkGroup">
-              <li><a class="navbar__link" rel="folow" href="/proyectos/">Proyectos</a></li>
-              <li><a class="navbar__link" rel="folow" href="/encuestas">Encuestas</a></li>
-              <li><a class="navbar__link" rel="folow" href="/informacion.html">Informacion</a></li>
+          <ul class="navbar__linkGroup"  id='mainNav'>
+              <li><a class="navbar__link" rel="folow" href="proyectos.html">Proyectos</a></li>
+              <li><a class="navbar__link" rel="folow" href="encuestas.html">Encuestas</a></li>
+              <li><a class="navbar__link" rel="folow" href="informacion.html">Informacion</a></li>
               <li><a class="navbar__link active" rel="folow" href="/contacto.html">Contacto</a></li>
           </ul>
-          <span className='navbar__btn'>
-              <i className="fas fa-bars"></i>
+          <span class='navbar__btn' id='mainNav_btn' onclick="toggleMobileMenu('mainNav')">
+              <i class="fas fa-bars"></i>
           </span>
       </nav>
   </header>
@@ -81,6 +81,7 @@
           </p>
       </div>
     </footer>
+    <script src="./js/index.js"></script>
     <script src="https://kit.fontawesome.com/ac24783485.js" crossorigin="anonymous"></script>
 
   </body>

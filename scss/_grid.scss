@@ -18,7 +18,7 @@
 }
 
 /* Moviles Grandes */
-@media only screen and (min-device-width: $sm_min-device-width) {
+@media (min-width: $sm_min-width) {
   @for $i from 1 through 12 {
     .grid--sm--#{$i} {
       display: grid;
@@ -33,7 +33,7 @@
   }
 }
 /* Tablets */
-@media only screen and (min-device-width: $med_min-device-width) {
+@media (min-width: $med_min-width) {
   @for $i from 1 through 12 {
     .grid--med--#{$i} {
       display: grid;
@@ -48,7 +48,7 @@
   }
 }
 /* Pequeños Monitores */
-@media only screen and (min-device-width: $larg_min-device-width) {
+@media (min-width: $larg_min-width) {
   @for $i from 1 through 12 {
     .grid--larg--#{$i} {
       display: grid;
@@ -63,7 +63,7 @@
   }
 }
 /* Resto */
-@media only screen and (min-device-width: $xl_min-device-width) {
+@media (min-width: $xl_min-width) {
   @for $i from 1 through 12 {
     .grid--xl--#{$i} {
       display: grid;
